@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>D-Dulce Pastelería</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>D-Dulce Pastelería</h1>
+            <h3>By Nicole  Crisci</h3>        
+        </div>
+    </header>
+    <!-- form for news-->
+    <main>
+        <div class="container-fluid mb-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <form>
+                    <div class="mb-3 mt-5">
+                        <label class="mb-2" for="nombre" id="nombre_cliente">Hola! Decinos como te llamas</label>
+                        <input type="text" class="form-control" id="nombre">
+                        <button class="mt-2" id="empezar" type="button">Empezar la compra</button>
+                    </div>
+                    <div class="mb-3 mt-5">
+                    <label for="email" class="form-label text-center">Decinos tu e-mail</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="recordarEmail">
+                        <label class="form-check-label" for="news">Quiero recibir las noticias y promociones!</label>
+                    </div>
+                    <div>
+                        <button type="submit" id="btn_guardar">Enviar Email</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </main>
+    <!-- Cards products-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">    
+                <div class="card me-3 mb-4" style="width: 18rem;">
+                    <img src="./img/chessecake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Cheese Cake</h5>
+                    <ul>
+                        <li>INGREDIENTES:</li>
+                        <li>Base de galletitas de vainillas, crema de queso, mermelada de frutos rojos y mix de frutos rojos deco</li>
+                        <li>Porciones: 10</li>
+                        <li>Peso Aprox.: 1,800</li>
+                    </ul>
+                    <p>PRECIO: $1.950</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button class="mt-2" id="cheeseCake" type="button">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="card me-3 mb-4" style="width: 18rem;">
+                    <img src="./img/tiramisu.jpg" class="card-img-top mt-2 alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Tiramisú</h5>
+                    <ul>
+                        <li>INGREDIENTES:</li>
+                        <li>Postre frio a base de vainillas embebidas en cafe, crema de queso, decorado con cacao amargo</li>
+                        <li>Porciones: 10</li>
+                        <li>Peso Aprox.: 1,500</li>
+                    </ul>
+                    <p>PRECIO: $1.650</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button class="mt-2" id="tiramisu" type="button">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="card me-3 mb-4" style="width: 18rem;">
+                    <img src="./img/tarta_frutillas.jpg" class="card-img-top mt-2" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Tarta de Frutillas</h5>
+                    <ul>
+                        <li>INGREDIENTES:</li>
+                        <li>Base de masa sable, frutillas y crema/crema pastelera</li>
+                        <li>Porciones: 10</li>
+                        <li>Peso Aprox.: 1,800</li>
+                    </ul>
+                    <p>PRECIO: $2.100</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button class="mt-2 mb-4" id="tartaFrutillas" type="button">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="card me-3 mb-4" style="width: 18rem;">
+                    <img src="./img/lemon_pie.jpg" class="card-img-top mt-2" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Lemon Pie Cake</h5>
+                    <ul>
+                        <li>INGREDIENTES:</li>
+                        <li>Base de masa sable, crema de limón y Merengue Italiano</li>
+                        <li>Porciones: 10</li>
+                        <li>Peso Aprox.: 1,400</li>
+                    </ul>
+                    <p>PRECIO: $1.500</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button class="mt-2" id="lemonPie" type="button">Agregar</button>
+                    </div>
+                </div>
+
+                <div class="card me-3 mb-4" style="width: 18rem;">
+                    <img src="./img/choco_oreo.jpg" class="card-img-top mt-2" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Choco Oreo Cake</h5>
+                    <ul>
+                        <li>INGREDIENTES:</li>
+                        <li>Base de galletitas oreo, dulce de leche y crema</li>
+                        <li>Porciones: 10</li>
+                        <li>Peso Aprox.: 1,800</li>
+                    </ul>
+                    <p>PRECIO: $1.900</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <button class="mt-2" id="chocoOreo" type="button">Agregar</button>
+                    </div>
+                </div>
+            </div>        
+            <div class="d-flex justify-content-center">
+                <button type="submit" id="finCompra">Finalizar la compra</button>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="container-fluid">
+            <p id="carrito">
+
+            </p>
+        </div>
+    </article>
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
