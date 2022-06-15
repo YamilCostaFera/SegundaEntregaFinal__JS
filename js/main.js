@@ -1,12 +1,33 @@
 const botonCarrito = document.querySelectorAll('.botonCarrito');
 const itinerarCarrito = document.querySelector('.itinerarCarrito');
 const tbody = document.querySelector('.tbody');
+const BtnDelete = document.querySelector ('.delete');
+// const botonFinalizar = document.querySelector('.finalizarCompra');
 let compra = [];
 
 botonCarrito.forEach(btn => {
-    btn.addEventListener('click', sumarProducto)
+    btn.addEventListener('click', sumarProducto);
+    btn.addEventListener('click', ()=>{
+        Toastify({
+
+            text: `Agregaste al carrito`,
+
+            duration: 3000,
+
+            offset: {x:10, y:100}
+            
+            }).showToast();
+    } 
+    );
+   
 })
 
+//boton finalizar compra ||FALTA TERMINARLO
+// botonFinalizar (btn =>{
+//     btn.addEventListener('click',()=>{
+
+//     })
+// })
 function sumarProducto(e) {
     // Con esto tomamos los elementos de los productos
     const button = e.target;
@@ -75,6 +96,7 @@ function renderCArrito() {
 
     })
     CarritoTotal(); //ejecutamos la funcion para ir sumando los productos/items cada vez que renderice en el HTML los valores
+    BtnDelete;
 }
 
 
@@ -108,6 +130,16 @@ function removerItemCArrito(e) {
 }
 
 
+BtnDelete.addEventListener ('click', () =>{
+    Swal.fire({
+        title: 'Estas seguro que queres sacarlo del cestito',
+        icon: 'warning',
+        confirmButtonText: 'Listo!'
+    })    
+} )
+
+
+
 //LOCALSTORAGE || para refrescar la pagina y que no se borre el carrito
 
 function addLocalStorage() {
@@ -123,3 +155,4 @@ window.onload = function () {
         renderCArrito();
     }
 }
+
